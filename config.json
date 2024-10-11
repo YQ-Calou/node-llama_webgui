@@ -1,0 +1,4 @@
+{
+    "model" : "gemma-2-9b-it-Q3_K_L.gguf",
+    "port" : 7860
+}

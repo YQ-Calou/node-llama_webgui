@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calou-GPT</title>
+
+        <link href="./fontawesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="./fontawesome/css/brands.css" rel="stylesheet" />
+        <link href="./fontawesome/css/solid.css" rel="stylesheet" />
+
+        <link href="./style.css" rel="stylesheet" />
+
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <div class="main_container">
+            <div class="screen">
+                <div class="chat_container">
+                </div>
+            </div>
+
+            <div class="button">
+                <div class="input_container">
+                    <input type="text" class="chat_input" id="input" placeholder="在此輸入訊息..." onkeydown="if(event.keyCode==13){sendMessage()}"/>
+                    <div class="action_button" onclick="sendMessage()">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="action_button" onclick="deleteMessage()">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <div class="warn">
+                    <p id="warn_text">請勿提供任何個人資料。Calou-GPT可能會隨時提供錯誤資訊，資訊來源並不可靠，請核實重要資訊。</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
