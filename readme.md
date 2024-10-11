@@ -1,4 +1,4 @@
-[English](README_EN.md) | 繁體中文
+[English](readme_EN.md) | 繁體中文
 
 # Llama cpp on Nodejs
 
