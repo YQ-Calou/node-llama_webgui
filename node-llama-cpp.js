@@ -3,6 +3,9 @@ import { fileURLToPath } from "url";
 import path from "path";
 import { getLlama, LlamaChatSession, Llama3ChatWrapper } from "node-llama-cpp";
 
+//os
+import os from 'os';
+
 //fs
 import fs from 'fs';
 
@@ -20,12 +23,17 @@ const model_file = path.join(__dirname, "models", use_model);
 //llama cpp
 const llama = await getLlama();
 
-llama.maxThreads = 0;
+//取得CPU核心數
+const cpuCount = os.cpus().length;
+llama.maxThreads = cpuCount;
 
 //讀取模型
 let model = await llama.loadModel({
-    modelPath: model_file
+    modelPath: model_file,
+    gpu: config.gpu_type,
+    gpuLayers: config.gpu_layers,
 });
+
 //創建聊天用窗口
 let context = await model.createContext();
 let session = new LlamaChatSession({
