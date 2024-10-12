@@ -21,7 +21,9 @@ const use_model = config.model;
 const model_file = path.join(__dirname, "models", use_model);
 
 //llama cpp
-const llama = await getLlama();
+const llama = await getLlama({
+    gpu: config.gpu_type,
+});
 
 //取得CPU核心數
 const cpuCount = os.cpus().length;
@@ -30,9 +32,10 @@ llama.maxThreads = cpuCount;
 //讀取模型
 let model = await llama.loadModel({
     modelPath: model_file,
-    gpu: config.gpu_type,
-    gpuLayers: config.gpu_layers,
+    gpuLayers: config.gpu_layers
 });
+
+console.log("GPU type:", llama.gpu);
 
 //創建聊天用窗口
 let context = await model.createContext();
