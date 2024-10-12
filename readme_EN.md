@@ -20,6 +20,10 @@ only to find out later that, despite their claim of supporting 3.12, you still h
 
 Python is suck.
 
+# Hey!
+
+Please install [Git](https://git-scm.com/) first.
+
 # Basic Configuration
 
 I've set everything up. Just use it.
