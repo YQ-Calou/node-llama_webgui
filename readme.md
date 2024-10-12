@@ -20,6 +20,10 @@
 
 誰愛寫誰寫
 
+# 注意 !
+
+Windows / Liunx 請先安裝 [Git](https://git-scm.com/)
+
 # 基礎調試
 
 我都調整好了，直接用
