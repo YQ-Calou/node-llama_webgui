@@ -59,6 +59,18 @@ If you do end up using it, just buy me a cold brew green tea next time, and weâ€
 
 THX~
 
+# Comparison
+All using `gemma 2b Q3` for inference, with the prompt: "As an AI, please explain five benefits you can bring to the world."
+
+Results are as follows:
+| Hardware | Time (s) |
+|----------|----------|
+| RTX3070 Laptop | 2.411(s) |
+| i7-11800H | 62.531(s) |
+| i5-8250U | 210.012(s) |
+
+\*Sigh\*, I guess the i5-8250U is just not worth it...
+
 ## Author
 
 Calou Zhou
