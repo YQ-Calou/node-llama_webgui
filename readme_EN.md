@@ -1,5 +1,8 @@
 English | [繁體中文](readme.md)
 
+# Deprecated !
+[simpleAPI-for-node-llama](https://github.com/YQ-Calou/simpleAPI-for-node-llama) is replace node-llama_webgui !!
+
 # Llama cpp on Nodejs
 
 Built with [node-llama-cpp](https://github.com/withcatai/node-llama-cpp)
