@@ -1,5 +1,8 @@
 [English](readme_EN.md) | 繁體中文
 
+# 新專案
+node-llama_webui 已經被 [SimpleAPI-for-node-llama](https://github.com/YQ-Calou/simpleAPI-for-node-llama) 取代
+
 # Llama cpp on Nodejs
 
 使用 [node-llama-cpp](https://github.com/withcatai/node-llama-cpp) 依賴製作
